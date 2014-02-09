@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0981402CB32A9043C27B1831 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D35CE548040C1EF3B8BD581 /* QuartzCore.framework */; };
+		0A7CB2C3E7FE44D1F59D1DC1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA8B2B19FA46102744D14EF /* libz.dylib */; };
+		146522ADF5E4653064507E24 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BBAEFAF2820EDE4EBA5D943 /* OpenGLES.framework */; };
+		1AFC6570D545FC38BB8C322F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0416087FE83DCD914CF69FA9 /* CoreGraphics.framework */; };
+		338EE78A3EEC20EFAA09A0C5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B247AC68273A6B9F29ED6CDC /* ImageIO.framework */; };
+		42719A8092E0ABC1D99AFF9A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9820B8516BCB7CD9A6553720 /* CoreData.framework */; };
+		5820428B1DE5AFB054FB571C /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 193951C11D1549E7701FFC40 /* libc++.dylib */; };
+		5845F7FA68488B60665B428C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837C86EA9AC87A3A5EA16145 /* AVFoundation.framework */; };
+		59A210B879A25213DDCF3F3B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B47995B2A94F831E8B7DD0F /* GLKit.framework */; };
+		610789D3FB759648F9F8BBC7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DFE1BF52A3A8AFFF379322 /* CoreFoundation.framework */; };
+		66C31DEBF878BF6C4C174807 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C04CF121E2CAC61D549125 /* CoreText.framework */; };
+		694EBC1D9DF39AADFC8439A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9926C6844E111CB23EF2E80 /* Foundation.framework */; };
+		6C86DB77A73CAEE2C48E6668 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8F59372BD761533A2A6B470A /* GoogleMaps.bundle */; };
+		7E22FF953ABFF7FC1B2A3C52 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2325AC9E493AAC86F87681E /* GoogleMaps.framework */; };
+		8B78DCF58E3C74416B9D7DBA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9285758C5E07413BA20C8840 /* UIKit.framework */; };
+		A1ACA18718A5E48B00FE4182 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ACA0E418A5E48B00FE4182 /* main.m */; };
+		A1ACA18818A5E48B00FE4182 /* aeroplane.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0E618A5E48B00FE4182 /* aeroplane.png */; };
+		A1ACA18918A5E48B00FE4182 /* aeroplane@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0E718A5E48B00FE4182 /* aeroplane@2x.png */; };
+		A1ACA18A18A5E48B00FE4182 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0E818A5E48B00FE4182 /* InfoPlist.strings */; };
+		A1ACA18B18A5E48B00FE4182 /* argentina-large.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0EA18A5E48B00FE4182 /* argentina-large.png */; };
+		A1ACA18C18A5E48B00FE4182 /* argentina.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0EB18A5E48B00FE4182 /* argentina.png */; };
+		A1ACA18D18A5E48B00FE4182 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0EC18A5E48B00FE4182 /* arrow.png */; };
+		A1ACA18E18A5E48B00FE4182 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0ED18A5E48B00FE4182 /* arrow@2x.png */; };
+		A1ACA18F18A5E48B00FE4182 /* australia-large.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0EE18A5E48B00FE4182 /* australia-large.png */; };
+		A1ACA19018A5E48B00FE4182 /* australia-large@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0EF18A5E48B00FE4182 /* australia-large@2x.png */; };
+		A1ACA19118A5E48B00FE4182 /* australia.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0F018A5E48B00FE4182 /* australia.png */; };
+		A1ACA19218A5E48B00FE4182 /* boat.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0F118A5E48B00FE4182 /* boat.png */; };
+		A1ACA19318A5E48B00FE4182 /* boat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0F218A5E48B00FE4182 /* boat@2x.png */; };
+		A1ACA19418A5E48B00FE4182 /* botswana-large.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0F318A5E48B00FE4182 /* botswana-large.png */; };
+		A1ACA19518A5E48B00FE4182 /* botswana.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0F418A5E48B00FE4182 /* botswana.png */; };
+		A1ACA19618A5E48B00FE4182 /* bulgaria-large.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0F518A5E48B00FE4182 /* bulgaria-large.png */; };
+		A1ACA19718A5E48B00FE4182 /* bulgaria.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA0F618A5E48B00FE4182 /* bulgaria.png */; };
+		A1ACA19818A5E48B00FE4182 /* glow-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10118A5E48B00FE4182 /* glow-marker.png */; };
+		A1ACA19918A5E48B00FE4182 /* glow-marker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10218A5E48B00FE4182 /* glow-marker@2x.png */; };
+		A1ACA19A18A5E48B00FE4182 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10818A5E48B00FE4182 /* Default-568h@2x.png */; };
+		A1ACA19B18A5E48B00FE4182 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10918A5E48B00FE4182 /* Default-Landscape@2x~ipad.png */; };
+		A1ACA19C18A5E48B00FE4182 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10A18A5E48B00FE4182 /* Default-Landscape~ipad.png */; };
+		A1ACA19D18A5E48B00FE4182 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10B18A5E48B00FE4182 /* Default-Portrait@2x~ipad.png */; };
+		A1ACA19E18A5E48B00FE4182 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10C18A5E48B00FE4182 /* Default-Portrait~ipad.png */; };
+		A1ACA19F18A5E48B00FE4182 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10D18A5E48B00FE4182 /* Default.png */; };
+		A1ACA1A018A5E48B00FE4182 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA10E18A5E48B00FE4182 /* Default@2x.png */; };
+		A1ACA1A518A5E48B00FE4182 /* museum-exhibits.json in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11718A5E48B00FE4182 /* museum-exhibits.json */; };
+		A1ACA1A618A5E48B00FE4182 /* h1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11918A5E48B00FE4182 /* h1.png */; };
+		A1ACA1A718A5E48B00FE4182 /* h1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11A18A5E48B00FE4182 /* h1@2x.png */; };
+		A1ACA1A818A5E48B00FE4182 /* spitfire.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11B18A5E48B00FE4182 /* spitfire.png */; };
+		A1ACA1A918A5E48B00FE4182 /* spitfire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11C18A5E48B00FE4182 /* spitfire@2x.png */; };
+		A1ACA1AA18A5E48B00FE4182 /* voyager.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11D18A5E48B00FE4182 /* voyager.png */; };
+		A1ACA1AB18A5E48B00FE4182 /* voyager@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11E18A5E48B00FE4182 /* voyager@2x.png */; };
+		A1ACA1AC18A5E48B00FE4182 /* x29.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA11F18A5E48B00FE4182 /* x29.png */; };
+		A1ACA1AD18A5E48B00FE4182 /* x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12018A5E48B00FE4182 /* x29@2x.png */; };
+		A1ACA1AE18A5E48B00FE4182 /* newark_nj_1922.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12118A5E48B00FE4182 /* newark_nj_1922.jpg */; };
+		A1ACA1AF18A5E48B00FE4182 /* popup_santa.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12518A5E48B00FE4182 /* popup_santa.png */; };
+		A1ACA1B018A5E48B00FE4182 /* popup_santa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12618A5E48B00FE4182 /* popup_santa@2x.png */; };
+		A1ACA1B118A5E48B00FE4182 /* step1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12C18A5E48B00FE4182 /* step1.png */; };
+		A1ACA1B218A5E48B00FE4182 /* step1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12D18A5E48B00FE4182 /* step1@2x.png */; };
+		A1ACA1B318A5E48B00FE4182 /* step2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12E18A5E48B00FE4182 /* step2.png */; };
+		A1ACA1B418A5E48B00FE4182 /* step2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA12F18A5E48B00FE4182 /* step2@2x.png */; };
+		A1ACA1B518A5E48B00FE4182 /* step3.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13018A5E48B00FE4182 /* step3.png */; };
+		A1ACA1B618A5E48B00FE4182 /* step3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13118A5E48B00FE4182 /* step3@2x.png */; };
+		A1ACA1B718A5E48B00FE4182 /* step4.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13218A5E48B00FE4182 /* step4.png */; };
+		A1ACA1B818A5E48B00FE4182 /* step4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13318A5E48B00FE4182 /* step4@2x.png */; };
+		A1ACA1B918A5E48B00FE4182 /* step5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13418A5E48B00FE4182 /* step5.png */; };
+		A1ACA1BA18A5E48B00FE4182 /* step5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13518A5E48B00FE4182 /* step5@2x.png */; };
+		A1ACA1BB18A5E48B00FE4182 /* step6.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13618A5E48B00FE4182 /* step6.png */; };
+		A1ACA1BC18A5E48B00FE4182 /* step6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13718A5E48B00FE4182 /* step6@2x.png */; };
+		A1ACA1BD18A5E48B00FE4182 /* step7.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13818A5E48B00FE4182 /* step7.png */; };
+		A1ACA1BE18A5E48B00FE4182 /* step7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13918A5E48B00FE4182 /* step7@2x.png */; };
+		A1ACA1BF18A5E48B00FE4182 /* step8.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13A18A5E48B00FE4182 /* step8.png */; };
+		A1ACA1C018A5E48B00FE4182 /* step8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13B18A5E48B00FE4182 /* step8@2x.png */; };
+		A1ACA1C118A5E48B00FE4182 /* track.json in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA13F18A5E48B00FE4182 /* track.json */; };
+		A1ACA1E018A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ACA18318A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m */; };
+		A1ACA1E118A5E48B00FE4182 /* NULLabsMapsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ACA18518A5E48B00FE4182 /* NULLabsMapsMasterViewController.m */; };
+		A1ACA1E318A5E54000FE4182 /* NUXLabs.gyp in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA1E218A5E54000FE4182 /* NUXLabs.gyp */; };
+		A1E698B918A6FEA20010F08C /* BasicMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B218A6FEA20010F08C /* BasicMapViewController.m */; };
+		A1E698BA18A6FEA20010F08C /* ChaptersOfficerMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B418A6FEA20010F08C /* ChaptersOfficerMapViewController.m */; };
+		A1E698BB18A6FEA20010F08C /* Maps.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B618A6FEA20010F08C /* Maps.m */; };
+		A1E698BC18A6FEA20010F08C /* MVPVisitorsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B818A6FEA20010F08C /* MVPVisitorsMapViewController.m */; };
+		C23B2E6EE94CD11A13CE30D6 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F5EF3ED006A948BCC2BF82 /* libobjc.dylib */; };
+		C51B014D04033D99F91AE8C6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4152CBF14080E0C84DFD6613 /* SystemConfiguration.framework */; };
+		D63117583BEBEFBE3B7E2AF8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A38AE667ACADB5627CF67973 /* CoreLocation.framework */; };
+		E4268A5F20F925F1047C47F4 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F6ED0C99E84A5FE46148309 /* libicucore.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0416087FE83DCD914CF69FA9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		193951C11D1549E7701FFC40 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4152CBF14080E0C84DFD6613 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4D35CE548040C1EF3B8BD581 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		74F5EF3ED006A948BCC2BF82 /* libobjc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libobjc.dylib; path = usr/lib/libobjc.dylib; sourceTree = SDKROOT; };
+		7B47995B2A94F831E8B7DD0F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7BBAEFAF2820EDE4EBA5D943 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		837C86EA9AC87A3A5EA16145 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8F59372BD761533A2A6B470A /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = wrapper.cfbundle; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		8F6ED0C99E84A5FE46148309 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		9285758C5E07413BA20C8840 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9820B8516BCB7CD9A6553720 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A1ACA0E418A5E48B00FE4182 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1ACA0E618A5E48B00FE4182 /* aeroplane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aeroplane.png; sourceTree = "<group>"; };
+		A1ACA0E718A5E48B00FE4182 /* aeroplane@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aeroplane@2x.png"; sourceTree = "<group>"; };
+		A1ACA0E918A5E48B00FE4182 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0EA18A5E48B00FE4182 /* argentina-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "argentina-large.png"; sourceTree = "<group>"; };
+		A1ACA0EB18A5E48B00FE4182 /* argentina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = argentina.png; sourceTree = "<group>"; };
+		A1ACA0EC18A5E48B00FE4182 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		A1ACA0ED18A5E48B00FE4182 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
+		A1ACA0EE18A5E48B00FE4182 /* australia-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "australia-large.png"; sourceTree = "<group>"; };
+		A1ACA0EF18A5E48B00FE4182 /* australia-large@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "australia-large@2x.png"; sourceTree = "<group>"; };
+		A1ACA0F018A5E48B00FE4182 /* australia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = australia.png; sourceTree = "<group>"; };
+		A1ACA0F118A5E48B00FE4182 /* boat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boat.png; sourceTree = "<group>"; };
+		A1ACA0F218A5E48B00FE4182 /* boat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boat@2x.png"; sourceTree = "<group>"; };
+		A1ACA0F318A5E48B00FE4182 /* botswana-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "botswana-large.png"; sourceTree = "<group>"; };
+		A1ACA0F418A5E48B00FE4182 /* botswana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botswana.png; sourceTree = "<group>"; };
+		A1ACA0F518A5E48B00FE4182 /* bulgaria-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bulgaria-large.png"; sourceTree = "<group>"; };
+		A1ACA0F618A5E48B00FE4182 /* bulgaria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bulgaria.png; sourceTree = "<group>"; };
+		A1ACA0F718A5E48B00FE4182 /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0F818A5E48B00FE4182 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0F918A5E48B00FE4182 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0FA18A5E48B00FE4182 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0FB18A5E48B00FE4182 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0FC18A5E48B00FE4182 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0FD18A5E48B00FE4182 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = en_GB.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0FE18A5E48B00FE4182 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA0FF18A5E48B00FE4182 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA10018A5E48B00FE4182 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA10118A5E48B00FE4182 /* glow-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glow-marker.png"; sourceTree = "<group>"; };
+		A1ACA10218A5E48B00FE4182 /* glow-marker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glow-marker@2x.png"; sourceTree = "<group>"; };
+		A1ACA10318A5E48B00FE4182 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA10418A5E48B00FE4182 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA10518A5E48B00FE4182 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA10618A5E48B00FE4182 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA10818A5E48B00FE4182 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A1ACA10918A5E48B00FE4182 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		A1ACA10A18A5E48B00FE4182 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		A1ACA10B18A5E48B00FE4182 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		A1ACA10C18A5E48B00FE4182 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		A1ACA10D18A5E48B00FE4182 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A1ACA10E18A5E48B00FE4182 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A1ACA11318A5E48B00FE4182 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA11418A5E48B00FE4182 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA11518A5E48B00FE4182 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA11618A5E48B00FE4182 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA11718A5E48B00FE4182 /* museum-exhibits.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "museum-exhibits.json"; sourceTree = "<group>"; };
+		A1ACA11918A5E48B00FE4182 /* h1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h1.png; sourceTree = "<group>"; };
+		A1ACA11A18A5E48B00FE4182 /* h1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "h1@2x.png"; sourceTree = "<group>"; };
+		A1ACA11B18A5E48B00FE4182 /* spitfire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spitfire.png; sourceTree = "<group>"; };
+		A1ACA11C18A5E48B00FE4182 /* spitfire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spitfire@2x.png"; sourceTree = "<group>"; };
+		A1ACA11D18A5E48B00FE4182 /* voyager.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voyager.png; sourceTree = "<group>"; };
+		A1ACA11E18A5E48B00FE4182 /* voyager@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "voyager@2x.png"; sourceTree = "<group>"; };
+		A1ACA11F18A5E48B00FE4182 /* x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = x29.png; sourceTree = "<group>"; };
+		A1ACA12018A5E48B00FE4182 /* x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "x29@2x.png"; sourceTree = "<group>"; };
+		A1ACA12118A5E48B00FE4182 /* newark_nj_1922.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newark_nj_1922.jpg; sourceTree = "<group>"; };
+		A1ACA12218A5E48B00FE4182 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12318A5E48B00FE4182 /* no */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = no; path = no.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12418A5E48B00FE4182 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12518A5E48B00FE4182 /* popup_santa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup_santa.png; sourceTree = "<group>"; };
+		A1ACA12618A5E48B00FE4182 /* popup_santa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popup_santa@2x.png"; sourceTree = "<group>"; };
+		A1ACA12718A5E48B00FE4182 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12818A5E48B00FE4182 /* pt_PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_PT; path = pt_PT.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12918A5E48B00FE4182 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12A18A5E48B00FE4182 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12B18A5E48B00FE4182 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA12C18A5E48B00FE4182 /* step1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step1.png; sourceTree = "<group>"; };
+		A1ACA12D18A5E48B00FE4182 /* step1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step1@2x.png"; sourceTree = "<group>"; };
+		A1ACA12E18A5E48B00FE4182 /* step2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step2.png; sourceTree = "<group>"; };
+		A1ACA12F18A5E48B00FE4182 /* step2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step2@2x.png"; sourceTree = "<group>"; };
+		A1ACA13018A5E48B00FE4182 /* step3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step3.png; sourceTree = "<group>"; };
+		A1ACA13118A5E48B00FE4182 /* step3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step3@2x.png"; sourceTree = "<group>"; };
+		A1ACA13218A5E48B00FE4182 /* step4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step4.png; sourceTree = "<group>"; };
+		A1ACA13318A5E48B00FE4182 /* step4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step4@2x.png"; sourceTree = "<group>"; };
+		A1ACA13418A5E48B00FE4182 /* step5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step5.png; sourceTree = "<group>"; };
+		A1ACA13518A5E48B00FE4182 /* step5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step5@2x.png"; sourceTree = "<group>"; };
+		A1ACA13618A5E48B00FE4182 /* step6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step6.png; sourceTree = "<group>"; };
+		A1ACA13718A5E48B00FE4182 /* step6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step6@2x.png"; sourceTree = "<group>"; };
+		A1ACA13818A5E48B00FE4182 /* step7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step7.png; sourceTree = "<group>"; };
+		A1ACA13918A5E48B00FE4182 /* step7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step7@2x.png"; sourceTree = "<group>"; };
+		A1ACA13A18A5E48B00FE4182 /* step8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = step8.png; sourceTree = "<group>"; };
+		A1ACA13B18A5E48B00FE4182 /* step8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "step8@2x.png"; sourceTree = "<group>"; };
+		A1ACA13C18A5E48B00FE4182 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA13D18A5E48B00FE4182 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA13E18A5E48B00FE4182 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA13F18A5E48B00FE4182 /* track.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = track.json; sourceTree = "<group>"; };
+		A1ACA14018A5E48B00FE4182 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA14118A5E48B00FE4182 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA14218A5E48B00FE4182 /* zh_CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_CN; path = zh_CN.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA14318A5E48B00FE4182 /* zh_TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = zh_TW; path = zh_TW.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1ACA18018A5E48B00FE4182 /* NUXLabsMaps-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NUXLabsMaps-Prefix.pch"; sourceTree = "<group>"; };
+		A1ACA18118A5E48B00FE4182 /* NUXLabsAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUXLabsAPIKey.h; sourceTree = "<group>"; };
+		A1ACA18218A5E48B00FE4182 /* NUXLabsMapsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUXLabsMapsAppDelegate.h; sourceTree = "<group>"; };
+		A1ACA18318A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NUXLabsMapsAppDelegate.m; sourceTree = "<group>"; };
+		A1ACA18418A5E48B00FE4182 /* NUXLabsMapsMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NUXLabsMapsMasterViewController.h; sourceTree = "<group>"; };
+		A1ACA18518A5E48B00FE4182 /* NULLabsMapsMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NULLabsMapsMasterViewController.m; sourceTree = "<group>"; };
+		A1ACA1E218A5E54000FE4182 /* NUXLabs.gyp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NUXLabs.gyp; sourceTree = "<group>"; };
+		A1ACA1E418A5E5B600FE4182 /* NUXLabs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NUXLabs-Info.plist"; sourceTree = "<group>"; };
+		A1D287ED18A7D08B007FE147 /* NUXLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NUXLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E698B118A6FEA20010F08C /* MeetingsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingsMapViewController.h; sourceTree = "<group>"; };
+		A1E698B218A6FEA20010F08C /* BasicMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapViewController.m; sourceTree = "<group>"; };
+		A1E698B318A6FEA20010F08C /* ChapterOfficersMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterOfficersMapViewController.h; sourceTree = "<group>"; };
+		A1E698B418A6FEA20010F08C /* ChaptersOfficerMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersOfficerMapViewController.m; sourceTree = "<group>"; };
+		A1E698B518A6FEA20010F08C /* Maps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maps.h; sourceTree = "<group>"; };
+		A1E698B618A6FEA20010F08C /* Maps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps.m; sourceTree = "<group>"; };
+		A1E698B718A6FEA20010F08C /* MVPVisitorsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPVisitorsMapViewController.h; sourceTree = "<group>"; };
+		A1E698B818A6FEA20010F08C /* MVPVisitorsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPVisitorsMapViewController.m; sourceTree = "<group>"; };
+		A38AE667ACADB5627CF67973 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AAA8B2B19FA46102744D14EF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B247AC68273A6B9F29ED6CDC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C9926C6844E111CB23EF2E80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2325AC9E493AAC86F87681E /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		D2DFE1BF52A3A8AFFF379322 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D8C04CF121E2CAC61D549125 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F427D7DE56744A968901ED9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E22FF953ABFF7FC1B2A3C52 /* GoogleMaps.framework in Frameworks */,
+				C23B2E6EE94CD11A13CE30D6 /* libobjc.dylib in Frameworks */,
+				610789D3FB759648F9F8BBC7 /* CoreFoundation.framework in Frameworks */,
+				694EBC1D9DF39AADFC8439A7 /* Foundation.framework in Frameworks */,
+				1AFC6570D545FC38BB8C322F /* CoreGraphics.framework in Frameworks */,
+				8B78DCF58E3C74416B9D7DBA /* UIKit.framework in Frameworks */,
+				5845F7FA68488B60665B428C /* AVFoundation.framework in Frameworks */,
+				42719A8092E0ABC1D99AFF9A /* CoreData.framework in Frameworks */,
+				D63117583BEBEFBE3B7E2AF8 /* CoreLocation.framework in Frameworks */,
+				66C31DEBF878BF6C4C174807 /* CoreText.framework in Frameworks */,
+				59A210B879A25213DDCF3F3B /* GLKit.framework in Frameworks */,
+				338EE78A3EEC20EFAA09A0C5 /* ImageIO.framework in Frameworks */,
+				5820428B1DE5AFB054FB571C /* libc++.dylib in Frameworks */,
+				E4268A5F20F925F1047C47F4 /* libicucore.dylib in Frameworks */,
+				0A7CB2C3E7FE44D1F59D1DC1 /* libz.dylib in Frameworks */,
+				146522ADF5E4653064507E24 /* OpenGLES.framework in Frameworks */,
+				0981402CB32A9043C27B1831 /* QuartzCore.framework in Frameworks */,
+				C51B014D04033D99F91AE8C6 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55584DEF78F797697AA2FD6D /* GoogleMaps.framework/Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F59372BD761533A2A6B470A /* GoogleMaps.bundle */,
+			);
+			path = GoogleMaps.framework/Resources;
+			sourceTree = "<group>";
+		};
+		6B58453C62AFCD886F0EED66 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACA0E218A5E48B00FE4182 /* NUXLabs */,
+				55584DEF78F797697AA2FD6D /* GoogleMaps.framework/Resources */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		979C0F71660CE8D4F2DB477E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				837C86EA9AC87A3A5EA16145 /* AVFoundation.framework */,
+				9820B8516BCB7CD9A6553720 /* CoreData.framework */,
+				D2DFE1BF52A3A8AFFF379322 /* CoreFoundation.framework */,
+				0416087FE83DCD914CF69FA9 /* CoreGraphics.framework */,
+				A38AE667ACADB5627CF67973 /* CoreLocation.framework */,
+				D8C04CF121E2CAC61D549125 /* CoreText.framework */,
+				C9926C6844E111CB23EF2E80 /* Foundation.framework */,
+				7B47995B2A94F831E8B7DD0F /* GLKit.framework */,
+				D2325AC9E493AAC86F87681E /* GoogleMaps.framework */,
+				B247AC68273A6B9F29ED6CDC /* ImageIO.framework */,
+				7BBAEFAF2820EDE4EBA5D943 /* OpenGLES.framework */,
+				4D35CE548040C1EF3B8BD581 /* QuartzCore.framework */,
+				4152CBF14080E0C84DFD6613 /* SystemConfiguration.framework */,
+				9285758C5E07413BA20C8840 /* UIKit.framework */,
+				193951C11D1549E7701FFC40 /* libc++.dylib */,
+				8F6ED0C99E84A5FE46148309 /* libicucore.dylib */,
+				74F5EF3ED006A948BCC2BF82 /* libobjc.dylib */,
+				AAA8B2B19FA46102744D14EF /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1ACA0E218A5E48B00FE4182 /* NUXLabs */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACA0E518A5E48B00FE4182 /* Resources */,
+				A1E698B018A6FEA20010F08C /* Maps */,
+				A1ACA1E418A5E5B600FE4182 /* NUXLabs-Info.plist */,
+				A1ACA0E418A5E48B00FE4182 /* main.m */,
+				A1ACA18018A5E48B00FE4182 /* NUXLabsMaps-Prefix.pch */,
+				A1ACA18118A5E48B00FE4182 /* NUXLabsAPIKey.h */,
+				A1ACA18218A5E48B00FE4182 /* NUXLabsMapsAppDelegate.h */,
+				A1ACA18318A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m */,
+				A1ACA18418A5E48B00FE4182 /* NUXLabsMapsMasterViewController.h */,
+				A1ACA18518A5E48B00FE4182 /* NULLabsMapsMasterViewController.m */,
+			);
+			path = NUXLabs;
+			sourceTree = "<group>";
+		};
+		A1ACA0E518A5E48B00FE4182 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACA0E618A5E48B00FE4182 /* aeroplane.png */,
+				A1ACA0E718A5E48B00FE4182 /* aeroplane@2x.png */,
+				A1ACA0E818A5E48B00FE4182 /* InfoPlist.strings */,
+				A1ACA0EA18A5E48B00FE4182 /* argentina-large.png */,
+				A1ACA0EB18A5E48B00FE4182 /* argentina.png */,
+				A1ACA0EC18A5E48B00FE4182 /* arrow.png */,
+				A1ACA0ED18A5E48B00FE4182 /* arrow@2x.png */,
+				A1ACA0EE18A5E48B00FE4182 /* australia-large.png */,
+				A1ACA0EF18A5E48B00FE4182 /* australia-large@2x.png */,
+				A1ACA0F018A5E48B00FE4182 /* australia.png */,
+				A1ACA0F118A5E48B00FE4182 /* boat.png */,
+				A1ACA0F218A5E48B00FE4182 /* boat@2x.png */,
+				A1ACA0F318A5E48B00FE4182 /* botswana-large.png */,
+				A1ACA0F418A5E48B00FE4182 /* botswana.png */,
+				A1ACA0F518A5E48B00FE4182 /* bulgaria-large.png */,
+				A1ACA0F618A5E48B00FE4182 /* bulgaria.png */,
+				A1ACA10118A5E48B00FE4182 /* glow-marker.png */,
+				A1ACA10218A5E48B00FE4182 /* glow-marker@2x.png */,
+				A1ACA10718A5E48B00FE4182 /* Images */,
+				A1ACA11718A5E48B00FE4182 /* museum-exhibits.json */,
+				A1ACA11818A5E48B00FE4182 /* Museum-Icons */,
+				A1ACA12118A5E48B00FE4182 /* newark_nj_1922.jpg */,
+				A1ACA12518A5E48B00FE4182 /* popup_santa.png */,
+				A1ACA12618A5E48B00FE4182 /* popup_santa@2x.png */,
+				A1ACA12C18A5E48B00FE4182 /* step1.png */,
+				A1ACA12D18A5E48B00FE4182 /* step1@2x.png */,
+				A1ACA12E18A5E48B00FE4182 /* step2.png */,
+				A1ACA12F18A5E48B00FE4182 /* step2@2x.png */,
+				A1ACA13018A5E48B00FE4182 /* step3.png */,
+				A1ACA13118A5E48B00FE4182 /* step3@2x.png */,
+				A1ACA13218A5E48B00FE4182 /* step4.png */,
+				A1ACA13318A5E48B00FE4182 /* step4@2x.png */,
+				A1ACA13418A5E48B00FE4182 /* step5.png */,
+				A1ACA13518A5E48B00FE4182 /* step5@2x.png */,
+				A1ACA13618A5E48B00FE4182 /* step6.png */,
+				A1ACA13718A5E48B00FE4182 /* step6@2x.png */,
+				A1ACA13818A5E48B00FE4182 /* step7.png */,
+				A1ACA13918A5E48B00FE4182 /* step7@2x.png */,
+				A1ACA13A18A5E48B00FE4182 /* step8.png */,
+				A1ACA13B18A5E48B00FE4182 /* step8@2x.png */,
+				A1ACA13F18A5E48B00FE4182 /* track.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A1ACA10718A5E48B00FE4182 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACA10818A5E48B00FE4182 /* Default-568h@2x.png */,
+				A1ACA10918A5E48B00FE4182 /* Default-Landscape@2x~ipad.png */,
+				A1ACA10A18A5E48B00FE4182 /* Default-Landscape~ipad.png */,
+				A1ACA10B18A5E48B00FE4182 /* Default-Portrait@2x~ipad.png */,
+				A1ACA10C18A5E48B00FE4182 /* Default-Portrait~ipad.png */,
+				A1ACA10D18A5E48B00FE4182 /* Default.png */,
+				A1ACA10E18A5E48B00FE4182 /* Default@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A1ACA11818A5E48B00FE4182 /* Museum-Icons */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACA11918A5E48B00FE4182 /* h1.png */,
+				A1ACA11A18A5E48B00FE4182 /* h1@2x.png */,
+				A1ACA11B18A5E48B00FE4182 /* spitfire.png */,
+				A1ACA11C18A5E48B00FE4182 /* spitfire@2x.png */,
+				A1ACA11D18A5E48B00FE4182 /* voyager.png */,
+				A1ACA11E18A5E48B00FE4182 /* voyager@2x.png */,
+				A1ACA11F18A5E48B00FE4182 /* x29.png */,
+				A1ACA12018A5E48B00FE4182 /* x29@2x.png */,
+			);
+			path = "Museum-Icons";
+			sourceTree = "<group>";
+		};
+		A1E698B018A6FEA20010F08C /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				A1E698B118A6FEA20010F08C /* MeetingsMapViewController.h */,
+				A1E698B218A6FEA20010F08C /* BasicMapViewController.m */,
+				A1E698B318A6FEA20010F08C /* ChapterOfficersMapViewController.h */,
+				A1E698B418A6FEA20010F08C /* ChaptersOfficerMapViewController.m */,
+				A1E698B518A6FEA20010F08C /* Maps.h */,
+				A1E698B618A6FEA20010F08C /* Maps.m */,
+				A1E698B718A6FEA20010F08C /* MVPVisitorsMapViewController.h */,
+				A1E698B818A6FEA20010F08C /* MVPVisitorsMapViewController.m */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		A2C8628B55F950FE20E7137C = {
+			isa = PBXGroup;
+			children = (
+				6B58453C62AFCD886F0EED66 /* Source */,
+				979C0F71660CE8D4F2DB477E /* Frameworks */,
+				D7938F561BAB3DB37E038EF7 /* Build */,
+				A1D287ED18A7D08B007FE147 /* NUXLabs.app */,
+			);
+			sourceTree = "<group>";
+		};
+		D7938F561BAB3DB37E038EF7 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				A1ACA1E218A5E54000FE4182 /* NUXLabs.gyp */,
+			);
+			name = Build;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0A34C824BF91068571FB9C9 /* NUXLabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 258F0E920477D8ADA8B68139 /* Build configuration list for PBXNativeTarget "NUXLabs" */;
+			buildPhases = (
+				ADA7B6829517252313848C86 /* Resources */,
+				2F23BF35CD9D8A7EBB7A3277 /* Sources */,
+				9F427D7DE56744A968901ED9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NUXLabs;
+			productName = NUXLabs;
+			productReference = A1D287ED18A7D08B007FE147 /* NUXLabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0152C353C1C1C999BE34696 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					F0A34C824BF91068571FB9C9 = {
+						DevelopmentTeam = 56UA83K4B3;
+					};
+				};
+			};
+			buildConfigurationList = 3203C92569C9F50F18471A03 /* Build configuration list for PBXProject "NUXLabs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				ar,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				en_GB,
+				es,
+				fi,
+				fr,
+				he,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				no,
+				pl,
+				pt,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+				zh_CN,
+				zh_TW,
+			);
+			mainGroup = A2C8628B55F950FE20E7137C;
+			productRefGroup = A2C8628B55F950FE20E7137C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0A34C824BF91068571FB9C9 /* NUXLabs */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA7B6829517252313848C86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1ACA18918A5E48B00FE4182 /* aeroplane@2x.png in Resources */,
+				A1ACA1B818A5E48B00FE4182 /* step4@2x.png in Resources */,
+				A1ACA18C18A5E48B00FE4182 /* argentina.png in Resources */,
+				A1ACA1AF18A5E48B00FE4182 /* popup_santa.png in Resources */,
+				A1ACA1B918A5E48B00FE4182 /* step5.png in Resources */,
+				A1ACA1BF18A5E48B00FE4182 /* step8.png in Resources */,
+				6C86DB77A73CAEE2C48E6668 /* GoogleMaps.bundle in Resources */,
+				A1ACA1AB18A5E48B00FE4182 /* voyager@2x.png in Resources */,
+				A1ACA1A018A5E48B00FE4182 /* Default@2x.png in Resources */,
+				A1ACA1AC18A5E48B00FE4182 /* x29.png in Resources */,
+				A1ACA1B018A5E48B00FE4182 /* popup_santa@2x.png in Resources */,
+				A1ACA1E318A5E54000FE4182 /* NUXLabs.gyp in Resources */,
+				A1ACA1A518A5E48B00FE4182 /* museum-exhibits.json in Resources */,
+				A1ACA1B618A5E48B00FE4182 /* step3@2x.png in Resources */,
+				A1ACA19018A5E48B00FE4182 /* australia-large@2x.png in Resources */,
+				A1ACA1AD18A5E48B00FE4182 /* x29@2x.png in Resources */,
+				A1ACA1B418A5E48B00FE4182 /* step2@2x.png in Resources */,
+				A1ACA19318A5E48B00FE4182 /* boat@2x.png in Resources */,
+				A1ACA19A18A5E48B00FE4182 /* Default-568h@2x.png in Resources */,
+				A1ACA19418A5E48B00FE4182 /* botswana-large.png in Resources */,
+				A1ACA1B218A5E48B00FE4182 /* step1@2x.png in Resources */,
+				A1ACA1A618A5E48B00FE4182 /* h1.png in Resources */,
+				A1ACA19F18A5E48B00FE4182 /* Default.png in Resources */,
+				A1ACA19E18A5E48B00FE4182 /* Default-Portrait~ipad.png in Resources */,
+				A1ACA19C18A5E48B00FE4182 /* Default-Landscape~ipad.png in Resources */,
+				A1ACA1B318A5E48B00FE4182 /* step2.png in Resources */,
+				A1ACA1BE18A5E48B00FE4182 /* step7@2x.png in Resources */,
+				A1ACA18818A5E48B00FE4182 /* aeroplane.png in Resources */,
+				A1ACA18F18A5E48B00FE4182 /* australia-large.png in Resources */,
+				A1ACA1A918A5E48B00FE4182 /* spitfire@2x.png in Resources */,
+				A1ACA1A818A5E48B00FE4182 /* spitfire.png in Resources */,
+				A1ACA1AE18A5E48B00FE4182 /* newark_nj_1922.jpg in Resources */,
+				A1ACA18B18A5E48B00FE4182 /* argentina-large.png in Resources */,
+				A1ACA19618A5E48B00FE4182 /* bulgaria-large.png in Resources */,
+				A1ACA19D18A5E48B00FE4182 /* Default-Portrait@2x~ipad.png in Resources */,
+				A1ACA18A18A5E48B00FE4182 /* InfoPlist.strings in Resources */,
+				A1ACA19B18A5E48B00FE4182 /* Default-Landscape@2x~ipad.png in Resources */,
+				A1ACA1BD18A5E48B00FE4182 /* step7.png in Resources */,
+				A1ACA19818A5E48B00FE4182 /* glow-marker.png in Resources */,
+				A1ACA1BC18A5E48B00FE4182 /* step6@2x.png in Resources */,
+				A1ACA19718A5E48B00FE4182 /* bulgaria.png in Resources */,
+				A1ACA1C018A5E48B00FE4182 /* step8@2x.png in Resources */,
+				A1ACA19218A5E48B00FE4182 /* boat.png in Resources */,
+				A1ACA1C118A5E48B00FE4182 /* track.json in Resources */,
+				A1ACA1B718A5E48B00FE4182 /* step4.png in Resources */,
+				A1ACA18D18A5E48B00FE4182 /* arrow.png in Resources */,
+				A1ACA19118A5E48B00FE4182 /* australia.png in Resources */,
+				A1ACA19518A5E48B00FE4182 /* botswana.png in Resources */,
+				A1ACA1BB18A5E48B00FE4182 /* step6.png in Resources */,
+				A1ACA1A718A5E48B00FE4182 /* h1@2x.png in Resources */,
+				A1ACA1B518A5E48B00FE4182 /* step3.png in Resources */,
+				A1ACA18E18A5E48B00FE4182 /* arrow@2x.png in Resources */,
+				A1ACA1BA18A5E48B00FE4182 /* step5@2x.png in Resources */,
+				A1ACA1B118A5E48B00FE4182 /* step1.png in Resources */,
+				A1ACA1AA18A5E48B00FE4182 /* voyager.png in Resources */,
+				A1ACA19918A5E48B00FE4182 /* glow-marker@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F23BF35CD9D8A7EBB7A3277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E698BA18A6FEA20010F08C /* ChaptersOfficerMapViewController.m in Sources */,
+				A1ACA1E118A5E48B00FE4182 /* NULLabsMapsMasterViewController.m in Sources */,
+				A1ACA1E018A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m in Sources */,
+				A1E698B918A6FEA20010F08C /* BasicMapViewController.m in Sources */,
+				A1E698BC18A6FEA20010F08C /* MVPVisitorsMapViewController.m in Sources */,
+				A1E698BB18A6FEA20010F08C /* Maps.m in Sources */,
+				A1ACA18718A5E48B00FE4182 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1ACA0E818A5E48B00FE4182 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1ACA0E918A5E48B00FE4182 /* ar */,
+				A1ACA0F718A5E48B00FE4182 /* ca */,
+				A1ACA0F818A5E48B00FE4182 /* cs */,
+				A1ACA0F918A5E48B00FE4182 /* da */,
+				A1ACA0FA18A5E48B00FE4182 /* de */,
+				A1ACA0FB18A5E48B00FE4182 /* el */,
+				A1ACA0FC18A5E48B00FE4182 /* en */,
+				A1ACA0FD18A5E48B00FE4182 /* en_GB */,
+				A1ACA0FE18A5E48B00FE4182 /* es */,
+				A1ACA0FF18A5E48B00FE4182 /* fi */,
+				A1ACA10018A5E48B00FE4182 /* fr */,
+				A1ACA10318A5E48B00FE4182 /* he */,
+				A1ACA10418A5E48B00FE4182 /* hr */,
+				A1ACA10518A5E48B00FE4182 /* hu */,
+				A1ACA10618A5E48B00FE4182 /* id */,
+				A1ACA11318A5E48B00FE4182 /* it */,
+				A1ACA11418A5E48B00FE4182 /* ja */,
+				A1ACA11518A5E48B00FE4182 /* ko */,
+				A1ACA11618A5E48B00FE4182 /* ms */,
+				A1ACA12218A5E48B00FE4182 /* nl */,
+				A1ACA12318A5E48B00FE4182 /* no */,
+				A1ACA12418A5E48B00FE4182 /* pl */,
+				A1ACA12718A5E48B00FE4182 /* pt */,
+				A1ACA12818A5E48B00FE4182 /* pt_PT */,
+				A1ACA12918A5E48B00FE4182 /* ro */,
+				A1ACA12A18A5E48B00FE4182 /* ru */,
+				A1ACA12B18A5E48B00FE4182 /* sk */,
+				A1ACA13C18A5E48B00FE4182 /* sv */,
+				A1ACA13D18A5E48B00FE4182 /* th */,
+				A1ACA13E18A5E48B00FE4182 /* tr */,
+				A1ACA14018A5E48B00FE4182 /* uk */,
+				A1ACA14118A5E48B00FE4182 /* vi */,
+				A1ACA14218A5E48B00FE4182 /* zh_CN */,
+				A1ACA14318A5E48B00FE4182 /* zh_TW */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		182F5544C35981299E88F8A3 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				INFOPLIST_FILE = "NUXLabs/NUXLabs-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					.,
+					"$(SDKROOT)/System/Library/Frameworks",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = NUXLabs;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 armv7";
+				WRAPPER_PREFIX = "";
+			};
+			name = Default;
+		};
+		A37B5359681FA0FDEE47E9A5 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INTERMEDIATE_DIR = "$(PROJECT_DERIVED_FILE_DIR)/$(CONFIGURATION)";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				SHARED_INTERMEDIATE_DIR = "$(SYMROOT)/DerivedSources/$(CONFIGURATION)";
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		258F0E920477D8ADA8B68139 /* Build configuration list for PBXNativeTarget "NUXLabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182F5544C35981299E88F8A3 /* Default */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Default;
+		};
+		3203C92569C9F50F18471A03 /* Build configuration list for PBXProject "NUXLabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A37B5359681FA0FDEE47E9A5 /* Default */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0152C353C1C1C999BE34696 /* Project object */;
+}
