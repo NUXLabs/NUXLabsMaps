@@ -80,8 +80,8 @@
 		A1ACA1E018A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ACA18318A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m */; };
 		A1ACA1E118A5E48B00FE4182 /* NULLabsMapsMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1ACA18518A5E48B00FE4182 /* NULLabsMapsMasterViewController.m */; };
 		A1ACA1E318A5E54000FE4182 /* NUXLabs.gyp in Resources */ = {isa = PBXBuildFile; fileRef = A1ACA1E218A5E54000FE4182 /* NUXLabs.gyp */; };
-		A1E698B918A6FEA20010F08C /* BasicMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B218A6FEA20010F08C /* BasicMapViewController.m */; };
-		A1E698BA18A6FEA20010F08C /* ChaptersOfficerMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B418A6FEA20010F08C /* ChaptersOfficerMapViewController.m */; };
+		A1D2888B18AA7A2E007FE147 /* MeetingsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D2888A18AA7A2E007FE147 /* MeetingsMapViewController.m */; };
+		A1D2888D18AA7A37007FE147 /* ChapterOfficersMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D2888C18AA7A37007FE147 /* ChapterOfficersMapViewController.m */; };
 		A1E698BB18A6FEA20010F08C /* Maps.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B618A6FEA20010F08C /* Maps.m */; };
 		A1E698BC18A6FEA20010F08C /* MVPVisitorsMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E698B818A6FEA20010F08C /* MVPVisitorsMapViewController.m */; };
 		C23B2E6EE94CD11A13CE30D6 /* libobjc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F5EF3ED006A948BCC2BF82 /* libobjc.dylib */; };
@@ -200,10 +200,10 @@
 		A1ACA1E218A5E54000FE4182 /* NUXLabs.gyp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NUXLabs.gyp; sourceTree = "<group>"; };
 		A1ACA1E418A5E5B600FE4182 /* NUXLabs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NUXLabs-Info.plist"; sourceTree = "<group>"; };
 		A1D287ED18A7D08B007FE147 /* NUXLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NUXLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D2888A18AA7A2E007FE147 /* MeetingsMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeetingsMapViewController.m; sourceTree = "<group>"; };
+		A1D2888C18AA7A37007FE147 /* ChapterOfficersMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChapterOfficersMapViewController.m; sourceTree = "<group>"; };
 		A1E698B118A6FEA20010F08C /* MeetingsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeetingsMapViewController.h; sourceTree = "<group>"; };
-		A1E698B218A6FEA20010F08C /* BasicMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMapViewController.m; sourceTree = "<group>"; };
 		A1E698B318A6FEA20010F08C /* ChapterOfficersMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChapterOfficersMapViewController.h; sourceTree = "<group>"; };
-		A1E698B418A6FEA20010F08C /* ChaptersOfficerMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChaptersOfficerMapViewController.m; sourceTree = "<group>"; };
 		A1E698B518A6FEA20010F08C /* Maps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Maps.h; sourceTree = "<group>"; };
 		A1E698B618A6FEA20010F08C /* Maps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Maps.m; sourceTree = "<group>"; };
 		A1E698B718A6FEA20010F08C /* MVPVisitorsMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPVisitorsMapViewController.h; sourceTree = "<group>"; };
@@ -386,9 +386,9 @@
 			isa = PBXGroup;
 			children = (
 				A1E698B118A6FEA20010F08C /* MeetingsMapViewController.h */,
-				A1E698B218A6FEA20010F08C /* BasicMapViewController.m */,
+				A1D2888A18AA7A2E007FE147 /* MeetingsMapViewController.m */,
 				A1E698B318A6FEA20010F08C /* ChapterOfficersMapViewController.h */,
-				A1E698B418A6FEA20010F08C /* ChaptersOfficerMapViewController.m */,
+				A1D2888C18AA7A37007FE147 /* ChapterOfficersMapViewController.m */,
 				A1E698B518A6FEA20010F08C /* Maps.h */,
 				A1E698B618A6FEA20010F08C /* Maps.m */,
 				A1E698B718A6FEA20010F08C /* MVPVisitorsMapViewController.h */,
@@ -570,13 +570,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1E698BA18A6FEA20010F08C /* ChaptersOfficerMapViewController.m in Sources */,
 				A1ACA1E118A5E48B00FE4182 /* NULLabsMapsMasterViewController.m in Sources */,
 				A1ACA1E018A5E48B00FE4182 /* NUXLabsMapsAppDelegate.m in Sources */,
-				A1E698B918A6FEA20010F08C /* BasicMapViewController.m in Sources */,
 				A1E698BC18A6FEA20010F08C /* MVPVisitorsMapViewController.m in Sources */,
 				A1E698BB18A6FEA20010F08C /* Maps.m in Sources */,
+				A1D2888D18AA7A37007FE147 /* ChapterOfficersMapViewController.m in Sources */,
 				A1ACA18718A5E48B00FE4182 /* main.m in Sources */,
+				A1D2888B18AA7A2E007FE147 /* MeetingsMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

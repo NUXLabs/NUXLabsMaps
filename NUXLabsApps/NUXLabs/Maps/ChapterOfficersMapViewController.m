@@ -42,19 +42,21 @@ static CGFloat randf() {
 }
 
 - (void)addDefaultMarkers {
-  // Add a custom 'glow' marker around Sydney.
-  GMSMarker *sydneyMarker = [[GMSMarker alloc] init];
-  sydneyMarker.title = @"San Diego";
-  sydneyMarker.icon = [UIImage imageNamed:@"glow-marker"];
-  sydneyMarker.position = CLLocationCoordinate2DMake(32.8245525, -117.0951632);
-  sydneyMarker.map = mapView_;
+  // Add a custom 'glow' marker around San Diego.
+  GMSMarker *sanDiegoMarker = [[GMSMarker alloc] init];
+  sanDiegoMarker.title = @"San Diego";
+  sanDiegoMarker.snippet = @"Section membership: 4576.\nSection Chair: Steve Smiley";
+  sanDiegoMarker.icon = [UIImage imageNamed:@"glow-marker"];
+  sanDiegoMarker.position = CLLocationCoordinate2DMake(32.8245525, -117.0951632);
+  sanDiegoMarker.map = mapView_;
 
-  // Add a custom 'arrow' marker pointing to Melbourne.
-  GMSMarker *melbourneMarker = [[GMSMarker alloc] init];
-  melbourneMarker.title = @"Las Vegas";
-  melbourneMarker.icon = [UIImage imageNamed:@"arrow"];
-  melbourneMarker.position = CLLocationCoordinate2DMake(36.125, -115.175);
-  melbourneMarker.map = mapView_;
+  // Add a custom 'arrow' marker pointing to Las Vegas.
+  GMSMarker *lasVegasMarker = [[GMSMarker alloc] init];
+  lasVegasMarker.title = @"Las Vegas";
+  lasVegasMarker.snippet = @"Section membership: 1107.\nSection Chair: Sargent Benson";
+  lasVegasMarker.icon = [UIImage imageNamed:@"arrow"];
+  lasVegasMarker.position = CLLocationCoordinate2DMake(36.125, -115.175);
+  lasVegasMarker.map = mapView_;
 }
 
 - (void)didTapAdd {
@@ -94,7 +96,7 @@ static CGFloat randf() {
   CLLocationCoordinate2D position =
       CLLocationCoordinate2DMake(latitude, longitude);
   GMSMarker *marker = [GMSMarker markerWithPosition:position];
-  marker.title = [NSString stringWithFormat:@"Marker #%d", ++kMarkerCount];
+  marker.title = [NSString stringWithFormat:@"Section #%d", ++kMarkerCount];
   marker.appearAnimation = kGMSMarkerAnimationPop;
   marker.icon = [GMSMarker markerImageWithColor:color];
 
