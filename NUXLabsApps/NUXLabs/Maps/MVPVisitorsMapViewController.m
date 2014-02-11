@@ -10,7 +10,7 @@
 
 @implementation MVPVisitorsMapViewController {
   GMSMapView *mapView_;
-  GMSMarker *melbourneMarker_;
+  GMSMarker *lasVegasMarker_;
 }
 
 - (void)viewDidLoad {
@@ -20,13 +20,13 @@
                                                                zoom:4];
   mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
 
-  GMSMarker *sydneyMarker = [[GMSMarker alloc] init];
-  sydneyMarker.position = CLLocationCoordinate2DMake(32.8245525, -117.0951632);
-  sydneyMarker.map = mapView_;
+  GMSMarker *sanDiegoMarker = [[GMSMarker alloc] init];
+  sanDiegoMarker.position = CLLocationCoordinate2DMake(32.8245525, -117.0951632);
+  sanDiegoMarker.map = mapView_;
 
-  melbourneMarker_ = [[GMSMarker alloc] init];
-  melbourneMarker_.position = CLLocationCoordinate2DMake(36.125, -115.175);
-  melbourneMarker_.map = mapView_;
+  lasVegasMarker_ = [[GMSMarker alloc] init];
+  lasVegasMarker_.position = CLLocationCoordinate2DMake(36.125, -115.175);
+  lasVegasMarker_.map = mapView_;
 
   mapView_.delegate = self;
   self.view = mapView_;
@@ -35,7 +35,7 @@
 #pragma mark - GMSMapViewDelegate
 
 - (UIView *)mapView:(GMSMapView *)mapView markerInfoWindow:(GMSMarker *)marker {
-  if (marker == melbourneMarker_) {
+  if (marker == lasVegasMarker_) {
     return [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Icon"]];
   }
 
@@ -55,11 +55,8 @@
   [mapView animateToCameraPosition:camera];
   [CATransaction commit];
 
-  // Melbourne marker has a InfoWindow so return NO to allow markerInfoWindow to
-  // fire. Also check that the marker isn't already selected so that the
-  // InfoWindow doesn't close.
-  if (marker == melbourneMarker_ &&
-      mapView.selectedMarker != melbourneMarker_) {
+  if (marker == lasVegasMarker_ &&
+      mapView.selectedMarker != lasVegasMarker_) {
     return NO;
   }
 
